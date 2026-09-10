@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tmux Agent Orchestrator"
+  short_description: "Govern any interactive agentic harness through tmux"
+  default_prompt: "Use $tmux-agent-orchestrator to take over the active agentic harness in tmux, assign the task with generic tmux state signaling, monitor state changes, and verify the result."
