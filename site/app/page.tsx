@@ -109,6 +109,7 @@ export default function Home() {
                       {String(index + 1).padStart(2, "0")}
                     </span>
                     <span className="tag">{skill.category}</span>
+                    <a className="tag" href={`${repo}/releases/tag/${skill.name}-v${skill.version}`} aria-label={`${skill.title} version ${skill.version} release notes`}>v{skill.version}</a>
                   </div>
                   <h3>{skill.title}</h3>
                   <p className="skill-summary">{skill.summary}</p>

@@ -35,3 +35,23 @@ python3 -m unittest discover -s skills/tmux-agent-orchestrator/tests -v
 The integration tests create temporary tmux sessions and clean them up. They do not launch an AI agent. Without tmux, they are skipped; install tmux to exercise the helper.
 
 For the catalog website, see [site/README.md](site/README.md).
+
+## Versioning and releases
+
+Skills are versioned independently using `MAJOR.MINOR.PATCH` in the quoted `metadata.version` field of `SKILL.md`. The website package version is separate.
+
+- **Patch:** compatible fixes, clarifications, or changes to bundled references and tests.
+- **Minor:** new capabilities that preserve existing usage.
+- **Major:** incompatible workflow, command, or required-environment changes.
+
+When changing any packaged skill file, increase its version, add a dated entry in its `CHANGELOG.md`, and update its version in `site/catalog.json`. CI checks these agree and requires changed skills to increase their version. New skills start at `1.0.0` when ready for their first stable release.
+
+Publish from a clean checkout after the main-branch checks pass. Create an annotated tag named `<skill-name>-v<version>`, then a GitHub Release with notes for that version. Validate the exact tag name first:
+
+```sh
+python scripts/validate_skills.py --release-tag tmux-agent-orchestrator-v1.0.0
+```
+
+Never move or reuse a published version tag. Publish a new version for corrections. Release URLs let users install a specific version; the repository shorthand tracks `main`. Installing another version is an explicit update, and `skills update` should not be treated as a guarantee that an installation remains pinned.
+
+Global installations are copies of published releases. Make changes in this repository, validate and release them, then reinstall the selected version. Do not develop inside the installed global copy.

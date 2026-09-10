@@ -30,6 +30,14 @@ To see what is available without installing anything:
 npx skills add ammar-hasan/agent-skills --list
 ```
 
+For a reproducible installation of the **1.0.0** release:
+
+```sh
+npx skills add https://github.com/ammar-hasan/agent-skills/tree/tmux-agent-orchestrator-v1.0.0/skills/tmux-agent-orchestrator --global
+```
+
+The short repository command follows `main`; the release URL selects the tagged version. Each skill has its own version in `SKILL.md`, changelog, and release tag. See [versioning and releases](CONTRIBUTING.md#versioning-and-releases) for the policy. Website-only changes do not change skill versions.
+
 Prefer a manual installation? Copy the entire folder from `skills/` into your agent’s supported skills directory. Keep its scripts and references alongside `SKILL.md`.
 
 ## The catalog
@@ -65,6 +73,7 @@ skills/
   tmux-agent-orchestrator/
     SKILL.md                 # Instructions and discovery metadata
     LICENSE                  # License travels with the installed skill
+    CHANGELOG.md             # Versioned changes for this skill
     agents/openai.yaml       # Optional agent UI metadata
     scripts/                 # Runtime helper
     references/              # Detailed operating protocol

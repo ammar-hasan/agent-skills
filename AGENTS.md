@@ -8,3 +8,4 @@
 - Never commit nested Git repositories, local credentials, logs, or caches.
 - Host the catalog on GitHub Pages. Do not create deployments with other hosting providers.
 - Run `python3 scripts/check_public_content.py` before publishing. Review examples for private project details that pattern checks cannot recognize; keep captures and snapshots out of the repository.
+- Version skills independently. Packaged changes need a version increase in `SKILL.md`, a changelog entry, and a matching catalog version. Release tags use `<skill-name>-v<version>` and must never be moved or reused.

@@ -1,6 +1,8 @@
 ---
 name: tmux-agent-orchestrator
 license: MIT
+metadata:
+  version: "1.0.0"
 description: Govern interactive agentic harnesses running in tmux. Use when the user asks the primary agent to discover, launch, take over, resume, direct, monitor, interrupt, restore, or receive updates from an AI agent in a tmux session, window, or pane. The protocol is harness-neutral and requires no vendor-specific API. Do not use for ordinary tmux administration that does not involve supervising an agent.
 ---
 

@@ -1,6 +1,7 @@
 [
   {
     "name": "tmux-agent-orchestrator",
+    "version": "1.0.0",
     "title": "Tmux Agent Orchestrator",
     "category": "Agent orchestration",
     "summary": "Give your primary agent a clear way to supervise another agent running in tmux—from the first assignment to a verified result.",
