@@ -44,6 +44,7 @@ Prefer a manual installation? Copy the entire folder from `skills/` into your ag
 
 | Skill | What it helps with | Requirements |
 | --- | --- | --- |
+| [osw](skills/osw/SKILL.md) | Manually invoke `$osw` to answer in one line using simple words, or simplify the last answer when no arguments are provided. | No extra tools. |
 | [Tmux Agent Orchestrator](skills/tmux-agent-orchestrator/SKILL.md) | Direct and monitor an interactive AI agent running in tmux, handle questions, track progress, and verify the result. | tmux, Python 3.9+, and an agent that can run shell commands. |
 
 ### Tmux Agent Orchestrator
@@ -70,6 +71,10 @@ Format compatibility does not remove a skill’s runtime requirements. Check the
 
 ```text
 skills/
+  osw/
+    SKILL.md                 # One simple instruction
+    LICENSE
+    CHANGELOG.md
   tmux-agent-orchestrator/
     SKILL.md                 # Instructions and discovery metadata
     LICENSE                  # License travels with the installed skill

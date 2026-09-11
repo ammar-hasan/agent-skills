@@ -6,7 +6,11 @@
     "category": "Agent orchestration",
     "summary": "Give your primary agent a clear way to supervise another agent running in tmux—from the first assignment to a verified result.",
     "useWhen": "An agent is working in a tmux pane and you want help checking progress, answering its questions, directing its next steps, or preparing a session for restoration.",
-    "requirements": ["tmux", "Python 3.9+", "Shell access"],
+    "requirements": [
+      "tmux",
+      "Python 3.9+",
+      "Shell access"
+    ],
     "features": [
       "Discover sessions and assign work",
       "Monitor progress and handle questions",
@@ -14,5 +18,22 @@
     ],
     "example": "Use tmux-agent-orchestrator to find the agent working on this project, check its progress, and supervise it until the task is complete. Verify the result before reporting back.",
     "note": "Bring your own installed agent. No vendor-specific API is required. Restoring a conversation depends on the agent’s own resume support; a tmux snapshot alone cannot restore process memory."
+  },
+  {
+    "name": "osw",
+    "version": "1.0.0",
+    "title": "osw",
+    "category": "Communication",
+    "summary": "Reply in one line using simple words.",
+    "useWhen": "Manually invoke $osw when you want a simple one-line answer to a question, or a shorter version of the last answer.",
+    "requirements": [
+      "No extra tools"
+    ],
+    "features": [
+      "Answer the supplied request in one line",
+      "Simplify the last answer when no arguments are given"
+    ],
+    "example": "$osw Explain what a cache does.",
+    "note": "Manual invocation only. Use $osw with a question, or by itself to rewrite the last answer in one line using simple words."
   }
 ]
