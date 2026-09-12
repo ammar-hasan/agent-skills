@@ -45,6 +45,8 @@ Prefer a manual installation? Copy the entire folder from `skills/` into your ag
 | Skill | What it helps with | Requirements |
 | --- | --- | --- |
 | [osw](skills/osw/SKILL.md) | Manually invoke `$osw` to answer in one line using simple words, or simplify the last answer when no arguments are provided. | No extra tools. |
+| [sdo](skills/sdo/SKILL.md) | Manually invoke `$sdo` to answer with a simple diagram only, or turn the last answer into a diagram when no arguments are provided. | No extra tools. |
+| [sto](skills/sto/SKILL.md) | Manually invoke `$sto` to answer with a simple table only, or turn the last answer into a table when no arguments are provided. | No extra tools. |
 | [Tmux Agent Orchestrator](skills/tmux-agent-orchestrator/SKILL.md) | Direct and monitor an interactive AI agent running in tmux, handle questions, track progress, and verify the result. | tmux, Python 3.9+, and an agent that can run shell commands. |
 
 ### Tmux Agent Orchestrator
@@ -75,6 +77,8 @@ skills/
     SKILL.md                 # One simple instruction
     LICENSE
     CHANGELOG.md
+  sdo/                       # Simple diagram only; manually invoked
+  sto/                       # Simple table only; manually invoked
   tmux-agent-orchestrator/
     SKILL.md                 # Instructions and discovery metadata
     LICENSE                  # License travels with the installed skill

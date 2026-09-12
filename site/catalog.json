@@ -35,5 +35,39 @@
     ],
     "example": "$osw Explain what a cache does.",
     "note": "Manual invocation only. Use $osw with a question, or by itself to rewrite the last answer in one line using simple words."
+  },
+  {
+    "name": "sdo",
+    "version": "1.0.0",
+    "title": "sdo",
+    "category": "Communication",
+    "summary": "Reply with a simple diagram only.",
+    "useWhen": "Manually invoke $sdo when you want a simple diagram for a question, or a diagram version of the last answer.",
+    "requirements": [
+      "No extra tools"
+    ],
+    "features": [
+      "Answer the supplied request with a simple diagram only",
+      "Turn the last answer into a diagram when no arguments are given"
+    ],
+    "example": "$sdo Show how a request reaches a server.",
+    "note": "Manual invocation only. Use $sdo with a question, or by itself to turn the last answer into a simple diagram."
+  },
+  {
+    "name": "sto",
+    "version": "1.0.0",
+    "title": "sto",
+    "category": "Communication",
+    "summary": "Reply with a simple table only.",
+    "useWhen": "Manually invoke $sto when you want a simple table for a question, or a table version of the last answer.",
+    "requirements": [
+      "No extra tools"
+    ],
+    "features": [
+      "Answer the supplied request with a simple table only",
+      "Turn the last answer into a table when no arguments are given"
+    ],
+    "example": "$sto Compare a list and a set.",
+    "note": "Manual invocation only. Use $sto with a question, or by itself to turn the last answer into a simple table."
   }
 ]
